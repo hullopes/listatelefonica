@@ -33,11 +33,9 @@ class NomeAdo extends Ado {
 
     public function incluiObjeto(\Model $nomeModel) {
         $query = " insert into listatelefonica "
-                . " (nome_id, "
                 . "  nome "
                 . "values"
                 . " (null, "
-                . "  '{$nomeModel->getNomeId}', "
                 . "  '{$nomeModel->getNome}') ";
 
         return $this->executaQuery($query);

@@ -3,34 +3,33 @@ require_once 'model.class.php';
 
 class NumeroModel extends Model{
 
-    private $telifoneId = null;
-    private $telifone = null;
+    private $telefoneId = null;
+    private $telefone = null;
     private $nomeNomeId = null;
 
-    function __construct($telifoneId = null, $telifone = null, $nomeNomeId = null) {
-        $this->telifoneId = $telifoneId;
-        $this->telifone   = $telifone;
+    function __construct($telefoneId, $telefone, $nomeNomeId) {
+        $this->telefoneId = $telefoneId;
+        $this->telefone   = $telefone;
         $this->nomeNomeId = $nomeNomeId;
     }
-
-    function getTelifoneId() {
-        return $this->telifoneId;
+    function getTelefoneId() {
+        return $this->telefoneId;
     }
 
-    function getTelifone() {
-        return $this->telifone;
+    function getTelefone() {
+        return $this->telefone;
     }
 
     function getNomeNomeId() {
         return $this->nomeNomeId;
     }
 
-    function setTelifoneId($telifoneId) {
-        $this->telifoneId = $telifoneId;
+    function setTelefoneId($telefoneId) {
+        $this->telefoneId = $telefoneId;
     }
 
-    function setTelifone($telifone) {
-        $this->telifone = $telifone;
+    function setTelefone($telefone) {
+        $this->telefone = $telefone;
     }
 
     function setNomeNomeId($nomeNomeId) {
