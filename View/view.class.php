@@ -32,8 +32,8 @@ abstract class View {
     private function montaHtml2() {
         $this->html2 = "
              <div align='center' class='credit'>
-                  <a href='#'><br />Fomulario</a> 
-                  � Copyright 2015. Todos os direitos reservados. Desenvolvidores: 
+                  <a href='#'><br />Lista Telefonica</a> 
+                   Copyright 2017. Todos os direitos reservados. Desenvolvidores: 
                   <span style='color:#ff2400;'> Jo&atilde;o Marcos De Oliveira Santos</span>
                   <span style='font-size: 100%; text-align: left;'>.</span>
               </div>
