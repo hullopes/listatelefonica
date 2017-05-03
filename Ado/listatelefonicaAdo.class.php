@@ -8,8 +8,8 @@ class ListatelefonicaAdo extends Ado {
         $query = " update listatelefonica "
                 . " set"
                 . " lista_nome        = '{$listaTelefonicaModel->getListaNome}', "
-                . " lista_numero        = '{$listaTelefonicaModel->getListaNumero}',"
-                . " where lista_id        = '{$listaTelefonicaModel->getListaId}',";
+                . " lista_numero        = '{$listaTelefonicaModel->getListaNumero}' "
+                . " where lista_id        = '{$listaTelefonicaModel->getListaId}' ";
 
         return $this->executaQuery($query);
     }
@@ -21,6 +21,7 @@ class ListatelefonicaAdo extends Ado {
     }
 
     public function consultaObjeto($idConsulta) {
+        
         $query = " Select * from listatelefonica where lista_id = '{$idConsulta}' ";
 
         return $this->executaQueryConsulta($query);
@@ -40,7 +41,7 @@ class ListatelefonicaAdo extends Ado {
                 . "  lista_numero) "
                 . "values"
                 . " (null, "
-                . "  '{$listaTelefoniaModel->getListaNome}' "
+                . "  '{$listaTelefoniaModel->getListaNome}', "
                 . "  '{$listaTelefoniaModel->getListaNumero}') ";
 
 

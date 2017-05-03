@@ -77,7 +77,6 @@ abstract class Ado {
 
     function buscaObjeto($idConsulta) {
         $resultado = $this->consultaObjeto($idConsulta);
-
         if ($resultado) {
             return $this->leObjeto($resultado);
         } else {

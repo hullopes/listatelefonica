@@ -7,7 +7,6 @@ class ListaTeleFonicaView extends View {
 
     public function montaDados(\Model $listaTelefonicaModel) {
         $this->form = null;
-
         $listaId     = $listaTelefonicaModel->getListaId();
         $listaNome   = $listaTelefonicaModel->getListaNome();
         $listaNumero = $listaTelefonicaModel->getListaNumero();
@@ -62,3 +61,5 @@ class ListaTeleFonicaView extends View {
     }
 
 }
+
+?>

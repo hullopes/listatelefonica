@@ -11,7 +11,7 @@ class ListaTelefonicaModel extends Model {
     function __construct($listaId = null, $listaNome = null, $listaNumero = null) {
         $this->listaId     = $listaId;
         $this->listaNome   = $listaNome;
-        $this->listaNomero = $listaNumero;
+        $this->listaNumero = $listaNumero;
     }
 
     function getListaId() {
