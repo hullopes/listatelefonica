@@ -67,6 +67,10 @@ abstract class View {
     public function getIdConsulta() {
         return $_POST ['idConsulta'];
     }
+    
+    public function getLetraInicial() {
+        return $_POST ['letraInicial'];
+    }
 
     abstract public function getObjetoModel();
 
