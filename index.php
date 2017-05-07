@@ -25,8 +25,24 @@ class index extends View {
         foreach (range('A', 'Z') as $letra) {
             print $letra;
         }
-        
-        
+      
+     $table =   "      <legend><strong> categoria ></strong></legend>
+                     if(lista.size()>0) {    
+                        <table align='center' border='1px' width='90%'>
+                        <tr>  
+                            <th>Nome</th>
+                            <th>Numero</th>
+                 
+                            
+                         </tr>
+                         <%                                                                                                            
+                            for(Produto p: lista ){
+                                int idProduto = p.getPRO_ID();               
+                        
+                        <tr>
+                            <th>$empresaNome</th>
+                            <th></th>
+        </table>";
     }
 
     public function getAcao() {
